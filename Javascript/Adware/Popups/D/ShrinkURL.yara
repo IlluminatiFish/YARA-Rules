@@ -10,8 +10,8 @@ rule ShrinkURL_Adware_DOM : JS_Adware {
 		$b_invoker_script_tag_a = /:\/\/[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{32}\/invoke.js/
 		$b_invoker_script_tag_b = "atOptions"
     
-    //NOTE: The following string does not work properly yet, however it should soon!
-    //$ad_script_tag = /<script type='text\/javascript' src='\/\/[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{32}.js'><\/script>/
+    		//NOTE: The following string does not work properly yet, however it should soon!
+   		 //$ad_script_tag = /<script type='text\/javascript' src='\/\/[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{32}.js'><\/script>/
 		
 	condition:
 		all of them
@@ -22,7 +22,7 @@ rule ShrinkURL_Adware_Generic : JS_Adware {
 		author = "IlluminatiFish"
 		date = "28-01-2021"
 		description = "Detects ShrinkURL adware generic script string"
-    generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
+    		generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
     
 	strings:
 		$string_a = ")](0x0,0x2)+"
@@ -36,7 +36,7 @@ rule ShirnkURL_Adware_Invoker : JS_Adware {
 		author = "IlluminatiFish"
 		date = "28-01-2021"
 		description = "Detects ShrinkURL adware invoker script"
-    generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
+    		generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
     
 	strings:
 		$string_a = "if(void 0x0"
@@ -55,7 +55,7 @@ rule ShirnkURL_Adware_Script : JS_Adware {
 		author = "IlluminatiFish"
 		date = "28-01-2021"
 		description = "Detects ShrinkURL adware ad generation script"
-    generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
+    		generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
     
 	strings:
 		$string_a = ")[0x1]"
