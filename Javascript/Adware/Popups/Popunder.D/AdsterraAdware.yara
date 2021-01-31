@@ -1,8 +1,8 @@
-rule ShrinkURL_Adware_DOM : JS_Adware {
+rule Adsterra_Adware_DOM : JS_Adware {
 	meta:
 		author = "IlluminatiFish"
 		date = "28-01-2021"
-		description = "Detects ShrinkURL adware script being loaded without the user's consent"
+		description = "Detects Adsterra adware script being loaded without the user's consent"
 
 	strings:
 		$div_container_tag = /<div id="container-[0-9a-f]{32}"><\/div>/
@@ -19,11 +19,11 @@ rule ShrinkURL_Adware_DOM : JS_Adware {
 
 
 
-rule ShrinkURL_Adware_Generic : JS_Adware {
+rule Adsterra_Adware_Generic : JS_Adware {
 	meta:
 		author = "IlluminatiFish"
 		date = "28-01-2021"
-		description = "Detects ShrinkURL adware generic script string"
+		description = "Detects Adsterra adware generic script string"
 		generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
     
 	strings:
@@ -33,11 +33,11 @@ rule ShrinkURL_Adware_Generic : JS_Adware {
 		all of them
 }
 
-rule ShirnkURL_Adware_Invoker : JS_Adware {
+rule Adsterra_Adware_Invoker : JS_Adware {
 	meta:
 		author = "IlluminatiFish"
 		date = "28-01-2021"
-		description = "Detects ShrinkURL adware invoker script"
+		description = "Detects Adsterra adware invoker script"
 		generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
     
 	strings:
@@ -52,11 +52,11 @@ rule ShirnkURL_Adware_Invoker : JS_Adware {
 		
 }	
 
-rule ShirnkURL_Adware_Script : JS_Adware {
+rule Adsterra_Adware_Script : JS_Adware {
 	meta:
 		author = "IlluminatiFish"
 		date = "28-01-2021"
-		description = "Detects ShrinkURL adware ad generation script"
+		description = "Detects Adsterra adware ad generation script"
 		generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
     
 	strings:
