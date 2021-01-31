@@ -6,14 +6,17 @@ rule ShrinkURL_Adware_DOM : JS_Adware {
 
 	strings:
 		$div_container_tag = /<div id="container-[0-9a-f]{32}"><\/div>/
+		
+		//TO-DO: Merge rule #1 (invoker_script_tag_a) with rule #2 (invoker_script_tag_b) 
 		$invoker_script_tag_a = /\/\/[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{32}\/invoke.js/
-		$invoker_script_tag_b = /(www\.)[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{32}\/invoke.js/
+		$invoker_script_tag_b = /\/\/(www\.)[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{32}\/invoke.js/
 		$invoker_script_tag_c = "atOptions"
 		$ad_script_tag = /\/\/[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{32}.js/
 
 	condition:
 		any of them
 }
+
 
 
 rule ShrinkURL_Adware_Generic : JS_Adware {
