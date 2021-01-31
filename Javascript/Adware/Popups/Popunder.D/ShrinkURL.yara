@@ -3,19 +3,18 @@ rule ShrinkURL_Adware_DOM : JS_Adware {
 		author = "IlluminatiFish"
 		date = "28-01-2021"
 		description = "Detects ShrinkURL adware script being loaded without the user's consent"
-    
+
 	strings:
-		$a_invoker_script_tag = /<script async="async" data-cfasync="false" src="\/\/[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{32}\/invoke.js"><\/script>/
 		$div_container_tag = /<div id="container-[0-9a-f]{32}"><\/div>/
-		$b_invoker_script_tag_a = /:\/\/[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{32}\/invoke.js/
-		$b_invoker_script_tag_b = "atOptions"
-    
-    	//NOTE: The following string does not work properly yet, however it should soon!
-   		//$ad_script_tag = /<script type='text\/javascript' src='\/\/[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{32}.js'><\/script>/
-		
+		$invoker_script_tag_a = /\/\/[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{32}\/invoke.js/
+		$invoker_script_tag_b = /(www\.)[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{32}\/invoke.js/
+		$invoker_script_tag_c = "atOptions"
+		$ad_script_tag = /\/\/[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{2}\/[0-9a-f]{32}.js/
+
 	condition:
-		all of them
+		any of them
 }
+
 
 rule ShrinkURL_Adware_Generic : JS_Adware {
 	meta:
