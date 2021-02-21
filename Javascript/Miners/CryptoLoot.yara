@@ -1,16 +1,15 @@
-rule CryptoLoot_DOM : JSMiner {
+rule CryptoLoot_Miner_DOM : JS_Miner {
     meta:
         author = "IlluminatiFish"
-        date = "14-02-2021"
+        date = "21-02-2021"
         description = "Detects the CryptoLoot miner script in a given DOM"
-        
 
     strings:
-        $cl_lib = "https://crypto-loot.com/lib/miner.min.js" nocase
-        $cl_launcher = /new CryptoLoot.Anonymous\('[a-z0-9]{44}', {/
-        $cl_launcher_start = ".start();" nocase
-       
+        $cl_function_a = /new CryptoLoot.Anonymous\('[a-z0-9]{44}'/
+        $cl_function_b = /new CRLT.Anonymous\('[a-z0-9]{44}'/
+        $cl_function_start = ".start();" nocase
+
     condition:
-        all of them or ($cl_lib and $cl_launcher) or ($cl_launcher and $cl_launcher_start)
-        
+        ($cl_function_a and $cl_function_start) or ($cl_function_b and $cl_function_start)
+
 }
