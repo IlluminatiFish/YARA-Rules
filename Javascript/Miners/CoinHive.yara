@@ -1,4 +1,4 @@
-rule CoinHive : JS.Miner {
+rule Coin_Hive_DOM : JSMiner {
     meta:
         author = "IlluminatiFish"
         date = "14-02-2021"
