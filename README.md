@@ -4,7 +4,7 @@ A repository to host all my YARA rules that I make for the public, and the secur
 
 # Rules Overview
 
-## JS:/Adware.Popup.D!sw
+## JS:/Adware.Popups.Popunder.A!sw
 
 Created a comprehensive [YARA rule](../main/Javascript/Adware/Popups/Popunder.D/AdsterraAdware.yara) that utilises regular expressions (regex) to detect the adware that can be found on the ShrinkURL URL shorterning service website. 
 Example: http://beta.shrinkurl.org/yiwC8Q
