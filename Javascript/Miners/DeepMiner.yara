@@ -1,7 +1,7 @@
 rule DeepMiner_DOM : JSMiner {
     meta:
         author = "IlluminatiFish"
-        date = "14-02-2021"
+        date = "24-02-2021"
         description = "Detects the DeepMiner miner script in a given DOM"
     
     strings:
