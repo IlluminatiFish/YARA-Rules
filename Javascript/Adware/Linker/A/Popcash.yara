@@ -1,4 +1,4 @@
-rule Popcash_Linker_DOM : JSAdware {
+rule Popcash_Linker_DOM : JS_Adware {
     meta:
         author = "IlluminatiFish"
         description = "Detects the popcash adware linker in a given DOM"
