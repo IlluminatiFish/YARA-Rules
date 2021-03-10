@@ -14,7 +14,7 @@ Example: http://beta.shrinkurl.org/yiwC8Q
 Created a comprehensive [YARA rule](../main/Javascript/Miners) that utilises regular expressions (regex) to detect the crypto miners that can be found in the DOM of a given website.
 Example: http://montre24.com/
 
-## Java:/Trojan.Gen!sw
+## Java:/Trojan.Gen.StudioCode!sw
 
 Coming soon
 
