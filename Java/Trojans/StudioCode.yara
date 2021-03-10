@@ -36,7 +36,7 @@ rule StudioCode_2018_Payload : Minecraft_Backdoor {
         created = "10-03-21"
         last_modified = "10-03-21"
 
-	/* These strings detect the payload YML (ZIP) file found in the plugin */
+    /* These strings detect the payload YML (ZIP) file found in the plugin */
     strings:
         $s_1 = "DRAWXxQcTebFLnizmMrWVYbLhRDCnqfCYgGdHrWFkSTzrghYlXTGxqkwjhkRasMxTrfftWPTojaYcDjvMDRrxUuQCyJFVndubUALwRxcKymnNJGYBVnfLimzoVDAyczEVMdLPukgobrDNueyXipYRRCmLfXqvUwsfdThVdOxkhurNAIeCcxHoyhQunXHH" /* Appears: 424 */
         $s_2 = "data" nocase /* Appears: 2 */
