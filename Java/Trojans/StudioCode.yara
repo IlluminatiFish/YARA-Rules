@@ -27,13 +27,14 @@ rule StudioCode_2018_Loader : Minecraft_Backdoor {
 
 
 
+
 rule StudioCode_2018_Payload : Minecraft_Backdoor {
 
-	meta:
-	    author = "IlluminatiFish"
-	    description = "Detects the StudioCode backdoor that injects itself into the onEnable() of a minecraft plugin and loads it payload from a ZIP masked as a YML file and masks itself using the names 'EssentialBackup' & 'PluginMetrics'"
-	    created = "10-03-21"
-	    last_modified = "10-03-21"
+    meta:
+        author = "IlluminatiFish"
+        description = "Detects the StudioCode backdoor that injects itself into the onEnable() of a minecraft plugin and loads it payload from a ZIP masked as a YML file and masks itself using the names 'EssentialBackup' & 'PluginMetrics'"
+        created = "10-03-21"
+        last_modified = "10-03-21"
 
 	/* These strings detect the payload YML (ZIP) file found in the plugin */
     strings:
