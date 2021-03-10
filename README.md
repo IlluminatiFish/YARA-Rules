@@ -6,7 +6,7 @@ A repository to host all my YARA rules that I make for the public, and the secur
 
 ## JS:/Adware.Popups.Popunder.A!sw
 
-Created a comprehensive [YARA rule](../main/Javascript/Adware/Popups/Popunder.D/AdsterraAdware.yara) that utilises regular expressions (regex) to detect the adware that can be found on the ShrinkURL URL shorterning service website. 
+Created a comprehensive [YARA rule](../main/Javascript/Adware/Popups/Popunder/A/AdsterraAdware.yara) that utilises regular expressions (regex) to detect the adware that can be found on the ShrinkURL URL shorterning service website. 
 Example: http://beta.shrinkurl.org/yiwC8Q
 
 ## JS:/Miner.Gen!sw
@@ -16,7 +16,7 @@ Example: http://montre24.com/
 
 ## Java:/Trojan.Gen.StudioCode!sw
 
-Coming soon
-
+Created a comprehensive [YARA rule](../main/Java/Trojans/StudioCode.yara) that utilises some regular expressions and strings to detect the StudioCode backdoor inside of minecraft plugins.
+Sample: <a href="../main/Java/Trojans/StudioCode-sample.jar">StudioCode sample</a>
 
 **NOTE: Proceed with caution, I do not advise you not to vist any of the links or download any of the samples unless you know what you are doing, I am not liable for any destruction or infections.**
