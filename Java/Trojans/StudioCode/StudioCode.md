@@ -5,8 +5,9 @@ The main injecting function
 
 Network IOCs |
 --- |
-https://studiocode.de   |
-31.214.243.114  |
-http://31.214.243.114/backdoor/tools/ExecuteWithDelay.jar  |
-POST /lookup HTTP/1.0  |
-POST /rmi HTTP/1.0 |
+Network Indicator #1 | https://studiocode.de   |
+Network Inidicator #2 | 31.214.243.114  |
+Backdoor Tool URL | http://31.214.243.114/backdoor/tools/ExecuteWithDelay.jar  |
+Request to C2 | POST /lookup HTTP/1.0  |
+Request to C2 | POST /rmi HTTP/1.0 |
+Initial C2 Payload | http://31.214.243.114/fefegfregt.jar | 
