@@ -9,7 +9,7 @@ rule StudioCode_2018_Loader : Minecraft_Backdoor {
     /* These strings detect the undecompiled class where the loader code is in */
     strings:
         $s_1 = "org/apache/commons/io/IOUtils" nocase /* Appears: 1 */
-        $s_2 = /[A-Za-z0-9]{10,}.yml/
+        $s_2 = /[A-Za-z0-9]{10,30}.yml/
         $s_3 = "java/lang/ClassLoader" nocase /* Appears: 2 */
         $s_4 = "loadPlugin" nocase /* Appears: 1 */
         $s_5 = "enablePlugin" nocase /* Appears: 1 */
