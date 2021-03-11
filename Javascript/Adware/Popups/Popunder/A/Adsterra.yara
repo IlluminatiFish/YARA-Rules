@@ -1,8 +1,10 @@
-rule Adsterra_Adware_DOM : JS_Adware {
+rule Adsterra_DOM : JS_Adware {
+
 	meta:
 		author = "IlluminatiFish"
-		date = "28-01-2021"
 		description = "Detects Adsterra adware script being loaded without the user's consent"
+		created = "28-01-2021"
+		last_modified = "24-02-2021"
 
 	strings:
 		$div_container_tag = /<div id="container-[0-9a-f]{32}"><\/div>/
@@ -19,11 +21,13 @@ rule Adsterra_Adware_DOM : JS_Adware {
 
 
 
-rule Adsterra_Adware_Generic : JS_Adware {
+rule Adsterra_Generic : JS_Adware {
+
 	meta:
 		author = "IlluminatiFish"
-		date = "28-01-2021"
 		description = "Detects Adsterra adware generic script string"
+		created = "28-01-2021"
+		last_modified = "24-02-2021"
 		generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
     
 	strings:
@@ -34,10 +38,12 @@ rule Adsterra_Adware_Generic : JS_Adware {
 }
 
 rule Adsterra_Adware_Invoker : JS_Adware {
+
 	meta:
 		author = "IlluminatiFish"
-		date = "28-01-2021"
 		description = "Detects Adsterra adware invoker script"
+		created = "28-01-2021"
+		last_modified = "24-02-2021"
 		generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
     
 	strings:
@@ -49,14 +55,15 @@ rule Adsterra_Adware_Invoker : JS_Adware {
     
 	condition:
 		all of them
-		
 }	
 
-rule Adsterra_Adware_Script : JS_Adware {
+rule Adsterra_Script : JS_Adware {
+
 	meta:
 		author = "IlluminatiFish"
-		date = "28-01-2021"
 		description = "Detects Adsterra adware ad generation script"
+		created = "28-01-2021"
+		last_modified = "24-02-2021"
 		generator = "https://gist.github.com/IlluminatiFish/b4e4298a7ac8a87a4d91b41a33f3cdb4"
     
 	strings:
@@ -73,5 +80,4 @@ rule Adsterra_Adware_Script : JS_Adware {
 		
 	condition:
 		all of them
-		
 }
