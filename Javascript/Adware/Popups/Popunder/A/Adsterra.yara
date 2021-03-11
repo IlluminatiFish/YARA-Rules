@@ -20,7 +20,6 @@ rule Adsterra_DOM : JS_Adware {
 }
 
 
-
 rule Adsterra_Generic : JS_Adware {
 
 	meta:
@@ -36,6 +35,7 @@ rule Adsterra_Generic : JS_Adware {
 	condition:
 		all of them
 }
+
 
 rule Adsterra_Adware_Invoker : JS_Adware {
 
@@ -56,6 +56,7 @@ rule Adsterra_Adware_Invoker : JS_Adware {
 	condition:
 		all of them
 }	
+
 
 rule Adsterra_Script : JS_Adware {
 
