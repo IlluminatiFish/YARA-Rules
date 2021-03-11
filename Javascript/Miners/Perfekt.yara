@@ -1,8 +1,9 @@
 rule Perfekt_Miner_DOM : JS_Miner {
 	meta:
-		description = "Detects the Perfekt javascript miner in a given DOM"
 		author = "IlluminatiFish"
-		date = "21-02-2021"
+		description = "Detects the Perfekt javascript miner in a given DOM"
+		created = "21-02-2021"
+		last_modified = "21-02-2021"
 
 	strings:
 		$pf_function_a = "PerfektStart"
