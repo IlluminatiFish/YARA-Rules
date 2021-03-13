@@ -37,7 +37,7 @@ rule Adsterra_Generic : JS_Adware {
 }
 
 
-rule Adsterra_Adware_Invoker : JS_Adware {
+rule Adsterra_Invoker : JS_Adware {
 
 	meta:
 		author = "IlluminatiFish"
