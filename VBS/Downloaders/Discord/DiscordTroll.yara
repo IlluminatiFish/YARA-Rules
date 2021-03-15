@@ -2,7 +2,7 @@ rule Discord_Troll_Downloader : VBS_Downloader {
 
     meta:
         author = "IlluminatiFish"
-        description = "Detects any discord image that has specific VBScript injected into them which flag AVs"
+        description = "Detects any discord image that has specific VBScript injected into it which flag AVs for some 2006 exploit"
         created = "06-03-2021"
         last_modified = "15-03-2021"
 
