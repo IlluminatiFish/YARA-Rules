@@ -7,12 +7,12 @@ A repository to host all my YARA rules that I make for the public, and the secur
 ## JS:/Adware.Popups.Popunder.A!sw
 
 Created a comprehensive [YARA rule](../main/Javascript/Adware/Popups/Popunder/A/AdsterraAdware.yara) that utilises regular expressions (regex) to detect the adware that can be found on the ShrinkURL URL shorterning service website. 
-Example: http://beta.shrinkurl.org/yiwC8Q
+Sample: http://beta.shrinkurl.org/yiwC8Q
 
 ## JS:/Miner.Gen!sw
 
 Created a comprehensive [YARA rule](../main/Javascript/Miners) that utilises regular expressions (regex) to detect the crypto miners that can be found in the DOM of a given website.
-Example: http://montre24.com/
+Sample: http://montre24.com/
 
 ## Java:/Trojan.Gen.StudioCode!sw
 
