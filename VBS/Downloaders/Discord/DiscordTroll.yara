@@ -1,3 +1,5 @@
+import "math"
+
 rule Discord_Troll_Downloader : VBS_Downloader {
 
     meta:
@@ -17,5 +19,14 @@ rule Discord_Troll_Downloader : VBS_Downloader {
         $image_file = "myImage.png"
 
     condition:
-        (7 of them and #image_file == 2 and #temp_folder == 1 and #shell_cmd == 1 and #registry_key == 1 and #payload_url == 1 and #wscript_shell == 1 and #adodb_stream == 1 and #http_request == 1)
+        (7 of them
+            and #image_file == 2 
+            and #temp_folder == 1 
+            and #shell_cmd == 1 
+            and #registry_key == 1 
+            and #payload_url == 1 
+            and #wscript_shell == 1 
+            and #adodb_stream == 1 
+            and #http_request == 1
+        ) 
 }
