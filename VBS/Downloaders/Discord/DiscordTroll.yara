@@ -1,5 +1,3 @@
-import "math"
-
 rule Discord_Troll_Downloader : VBS_Downloader {
 
     meta:
