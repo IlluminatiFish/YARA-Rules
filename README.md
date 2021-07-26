@@ -29,4 +29,8 @@ Sample: https://cdn.discordapp.com/emojis/794755796326940674.png?v=1
 Created a comprehensive [YARA rule](../main/Web/Spam/Instagram/Netlify.yara) that utilises regular expressions (regex) to detect the URLs advertised by Instagram porn bots.
 Sample: https://priceless-lewin-1df237.netlify.app
 
+## Discord:/Stealer.Wodx!sw
+
+Created a YARA rule that utilises regular expressions (regex) to detect the webhook used in the exfiltration process after the token is grabbed from the file of the victim's computer, and uses some strings that are seen in most variants of the wodx stealer as a detection point.
+
 **NOTE: Proceed with caution, I do not advise you not to vist any of the links or download any of the samples unless you know what you are doing, I am not liable for any destruction or infections.**
