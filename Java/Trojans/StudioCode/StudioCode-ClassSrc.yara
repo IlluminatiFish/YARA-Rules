@@ -6,7 +6,7 @@ rule StudioCode_Backdoor: Minecraft_Backdoor {
         $injected_method = /private void [A-Za-z0-9]+\(\)/
         $dropped_file_loader = "Bukkit.getPluginManager().loadPlugin" ascii
         $dropped_file_enabler = "Bukkit.getPluginManager().enablePlugin" ascii
-        $t = "getClass().getClassLoader().getResourceAsStream"
+        $backdoor_loader = "getClass().getClassLoader().getResourceAsStream"
     condition:
         all of them
 }
