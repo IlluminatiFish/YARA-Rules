@@ -7,10 +7,10 @@ rule Wodx_Token_Stealer : Discord_Stealer {
         author = "IlluminatiFish"
         description = "A rule to detect the wodx discord token stealer"
         created = "26-07-2021"
-        last_modified = "26-07-2021"
+        last_modified = "29-10-2021"
 
     strings:
-        $webhook_url = /http[s]:\/\/(ptb\.|canary\.)?discord\.com\/api\/webhooks\/[0-9]{18}\/[a-zA-Z0-9-_]+/ ascii wide nocase
+        $webhook_url = /(https?):\/\/((?:ptb\.|canary\.)?discord(?:app)?\.com)\/api(?:\/)?(v\d{1,2})?\/webhooks\/(\d{17,19})\/([\w\-]{68})/ ascii wide nocase
         $token_path = /\\\\Local Storage\\\\leveldb/ ascii wide nocase
         $developer_signature = "https://pastebin.com/raw/ssFxiejv" ascii wide nocase
 
